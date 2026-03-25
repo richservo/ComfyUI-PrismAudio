@@ -1,0 +1,33 @@
+# PrismAudio inference dependencies
+# NOTE: protobuf and setuptools are version-constrained to avoid breaking
+# other ComfyUI custom nodes (tensorflow, transformers, etc.)
+
+# Diffusion / ML
+k-diffusion==0.1.1.post1
+prefigure==0.0.10
+lightning==2.6.1
+descript-audio-codec==1.0.0
+clip-anytorch
+omegaconf
+
+# Tensor ops
+einops
+einops_exts
+einshape
+
+# Audio / video feature extraction
+jax[cpu]
+videoprism @ git+https://github.com/google-deepmind/videoprism.git
+sentencepiece
+mediapy
+
+# Model building blocks
+alias-free-torch
+packaging
+tqdm
+
+# Compatibility pins — do not remove
+setuptools<=81
+protobuf>=6.0,<7
+gast
+astunparse

@@ -1,0 +1,18 @@
+# Cloned source and checkpoints (large, not part of this repo)
+cd_prismaudio_source/
+_videoprism_src/
+ckpts/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
